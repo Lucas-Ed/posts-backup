@@ -186,6 +186,14 @@ Este diretório é o local onde o Django armazenará todos os seus arquivos est�
 Em seguida, você pode usar a diretiva `{% static %}` em seus templates para referenciar arquivos estáticos. Por exemplo, o seguinte código renderizará a imagem `image.jpg`:
 
 ```
+{% load static %}
+
+{% block 'head' %}
+
+    <link href="{% static 'geral/css/style.css' %}" rel="stylesheet">
+
+{% endblock 'head' %}
+
 <img src="{% static "image.jpg" %}" />
 ```
 
