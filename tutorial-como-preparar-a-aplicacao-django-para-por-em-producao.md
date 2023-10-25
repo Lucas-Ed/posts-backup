@@ -60,7 +60,15 @@ Por fim, rode o coolestatic novamente:
 ```
 python manage.py collectstatic
 ```
+**Configurando o domínio de acesso**
 
+Em `settings.py`, coloque o domínio que podem dar acesso a aplicação por meio do crfs token:
+
+
+```
+                       //Coloque aqui seu domínio
+CSRF_TRUSTED_ORIGINS = ['https://seu-domínio']
+```
 Sua aplicação está pronta para por em produção, epois de configurar o ambiente de desenvolvimento, você pode enviar sua aplicação para produção. Isso inclui criar um servidor da web e configurar o aplicativo para ser executado nele, leve em conta também de configurar as variáveis de ambiente no ambiente de produção a qual ficará hospedada a aplicação.
 
 È só isso, obrigado !!
