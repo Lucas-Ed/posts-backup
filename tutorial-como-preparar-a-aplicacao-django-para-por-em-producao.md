@@ -33,7 +33,7 @@ pip install whitenoise
 Rode o comando para gerar novamente o arquivo requirements.txt da aplicação:
 
 ```
-pip install -r requirements.txt
+pip freeze > requirements.txt
 ```
 
 Logo após, devemos adicionar a seguinte linha no arquivo de settings.py:
