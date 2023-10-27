@@ -20,6 +20,8 @@ ALLOWED_HOSTS = [ ]
 
 // Para
 ALLOWED_HOSTS = ["*"]
+// Ou
+ALLOWED_HOSTS = ["seudominio.com"]
 ```
 
 - **Configure para servir os arquivos Staticos com WhiteNoise**
